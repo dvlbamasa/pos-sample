@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+<div class="parent">
+  <div class="panel1">
+    <div class="container mt-5">
+      <h1>Sample POS</h1>
+    </div>
+    <div class="container mt-5">
+      <div class="table-responsive  mb-3">
+        <table class="table table-striped table-hover">
+          <thead class="">
+          <tr>
+            <th scope="col"> ITEM</th>
+            <th scope="col"> QUANTITY</th>
+            <th scope="col"> PRICE</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>Cooking Oil</span></td>
+              <td><span>1</span></td>
+              <td><span>Php 100.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Sugar</span></td>
+              <td><span>2</span></td>
+              <td><span>Php 200.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Milk</span></td>
+              <td><span>3</span></td>
+              <td><span>Php 260.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Shampoo</span></td>
+              <td><span>1</span></td>
+              <td><span>Php 120.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Soap</span></td>
+              <td><span>2</span></td>
+              <td><span>Php 150.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Canned Goods</span></td>
+              <td><span>5</span></td>
+              <td><span>Php 250.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Chips</span></td>
+              <td><span>3</span></td>
+              <td><span>Php 120.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Cookies</span></td>
+              <td><span>2</span></td>
+              <td><span>Php 200.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Chocolates</span></td>
+              <td><span>1</span></td>
+              <td><span>Php 200.00</span></td>
+            </tr>
+            <tr>
+              <td><span>Laundry Soap</span></td>
+              <td><span>1</span></td>
+              <td><span>Php 80.00</span></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="parent">
+        <div class="panel1 container" id="total-items">
+          <h3>TOTAL ITEM: </h3>
+        </div>
+        <div class="panel2 container" id="discount">
+          <h3>DISCOUNT: </h3>
+
+        </div>
+      </div>
+
+      <div id="total-amount">
+        <h3>TOTAL AMOUNT: </h3>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="panel2">
+    <div class="container mt-5" >
+      <div style="text-align: right">
+        <label style="margin-right: 20px;">Cashier: New User</label>
+        <button class="btn btn-secondary btn-lg">SETTINGS</button>
+        <a href="index.html">
+          <button class="btn btn-primary btn-lg">LOGOUT</button>
+        </a>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <hr class="border"/>
+    </div>
+    <div class="d-grid gap-2 col-10 mx-auto">
+      <button class="btn btn-primary btn-lg mt-2" type="button">Cash Payment</button>
+      <button class="btn btn-primary btn-lg mt-2" type="button">Check Payment</button>
+      <button class="btn btn-primary btn-lg mt-2" type="button">GC Payment</button>
+      <button class="btn btn-primary btn-lg mt-2" type="button">Credit/Debit Payment</button>
+      <button class="btn btn-primary btn-lg mt-2" type="button">Points Payment</button>
+      <button class="btn btn-primary btn-lg mt-2" type="button">Coupon</button>
+      <button class="btn btn-info btn-lg mt-2" type="button">Print Receipt</button>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
