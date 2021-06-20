@@ -5,12 +5,14 @@
     <title>POS - Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
 <div class="parent">
   <div class="panel1">
     <div class="container mt-5">
-      <h1>Sample POS</h1>
+      <h1 class="title-label">Sample POS</h1>
     </div>
     <div class="container mt-5">
       <div class="table-responsive  mb-3">
@@ -19,7 +21,9 @@
           <tr>
             <th scope="col"> ITEM</th>
             <th scope="col"> QUANTITY</th>
-            <th scope="col"> PRICE</th>
+            <th scope="col"> UNIT COST</th>
+            <th scope="col"> TOTAL PRICE</th>
+            <th scope="col"> ACTION</th>
           </tr>
           </thead>
           <tbody>
@@ -27,51 +31,82 @@
               <td><span>Cooking Oil</span></td>
               <td><span>1</span></td>
               <td><span>Php 100.00</span></td>
+              <td><span>Php 100.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
+
             </tr>
             <tr>
               <td><span>Sugar</span></td>
               <td><span>2</span></td>
               <td><span>Php 200.00</span></td>
+              <td><span>Php 400.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Milk</span></td>
               <td><span>3</span></td>
               <td><span>Php 260.00</span></td>
+              <td><span>Php 780.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Shampoo</span></td>
               <td><span>1</span></td>
               <td><span>Php 120.00</span></td>
+              <td><span>Php 120.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Soap</span></td>
               <td><span>2</span></td>
               <td><span>Php 150.00</span></td>
+              <td><span>Php 300.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Canned Goods</span></td>
               <td><span>5</span></td>
               <td><span>Php 250.00</span></td>
+              <td><span>Php 1250.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Chips</span></td>
               <td><span>3</span></td>
               <td><span>Php 120.00</span></td>
+              <td><span>Php 360.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Cookies</span></td>
               <td><span>2</span></td>
+              <td><span>Php 100.00</span></td>
               <td><span>Php 200.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Chocolates</span></td>
               <td><span>1</span></td>
               <td><span>Php 200.00</span></td>
+              <td><span>Php 200.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             <tr>
               <td><span>Laundry Soap</span></td>
               <td><span>1</span></td>
               <td><span>Php 80.00</span></td>
+              <td><span>Php 80.00</span></td>
+              <td><button class="btn btn-primary"><span><i class="fas fa-plus-square"></i></span> Add Item</button></td>
+              <td><button class="btn btn-danger"><span><i class="fas fa-trash-alt"></i></span> Remove</button></td>
             </tr>
             </tbody>
         </table>
@@ -79,16 +114,17 @@
       <div class="parent">
         <div class="panel1 container" id="total-items">
           <h3>TOTAL ITEM: </h3>
+          <h1 class="large-num-label">21</h1>
         </div>
         <div class="panel2 container" id="discount">
           <h3>DISCOUNT: </h3>
-
+          <h1 class="large-num-label">250.00</h1>
         </div>
       </div>
 
       <div id="total-amount">
         <h3>TOTAL AMOUNT: </h3>
-
+        <h1 class="large-num-label">3540.00</h1>
       </div>
     </div>
 
@@ -97,24 +133,33 @@
     <div class="container mt-5" >
       <div style="text-align: right">
         <label style="margin-right: 20px;">Cashier: New User</label>
-        <button class="btn btn-secondary btn-lg">SETTINGS</button>
+        <button class="btn btn-secondary btn-lg"><i class="fas fa-cog"></i> SETTINGS</button>
         <a href="index.html">
-          <button class="btn btn-primary btn-lg">LOGOUT</button>
+          <button class="btn btn-primary btn-lg"><i class="fas fa-sign-out-alt"></i> LOGOUT</button>
         </a>
       </div>
     </div>
-    <div class="container mt-5 mb-5">
+    <div class="container pt-5">
       <hr class="border"/>
     </div>
-    <div class="d-grid gap-2 col-10 mx-auto">
-      <button class="btn btn-primary btn-lg mt-2" type="button">Cash Payment</button>
-      <button class="btn btn-primary btn-lg mt-2" type="button">Check Payment</button>
-      <button class="btn btn-primary btn-lg mt-2" type="button">GC Payment</button>
-      <button class="btn btn-primary btn-lg mt-2" type="button">Credit/Debit Payment</button>
-      <button class="btn btn-primary btn-lg mt-2" type="button">Points Payment</button>
-      <button class="btn btn-primary btn-lg mt-2" type="button">Coupon</button>
-      <button class="btn btn-info btn-lg mt-2" type="button">Print Receipt</button>
-
+    <div class="container button-group">
+      <div class="d-grid col-12">
+        <div class="row">
+          <button class="butt btn-info btn-lg mt-2" style="margin-right: 30px; margin-left: 50px;" type="button">Cash Payment</button>
+          <button class="butt btn-info btn-lg mt-2" type="button">Check Payment</button>
+        </div>
+        <div class="row">
+          <button class="butt btn-info btn-lg mt-2" style="margin-right: 30px; margin-left: 50px;" type="button">GC Payment</button>
+          <button class="butt btn-info btn-lg mt-2" type="button">Credit/Debit Payment</button>
+        </div>
+        <div class="row">
+          <button class="butt btn-info btn-lg mt-2" style="margin-right: 30px; margin-left: 50px;" type="button">Points Payment</button>
+          <button class="butt btn-info btn-lg mt-2" type="button">Coupon Payment</button>
+        </div>
+        <button class="btn btn-danger btn-lg mt-3" type="button"><i class="fas fa-times-circle"></i> Void Transaction</button>
+        <button class="btn btn-primary btn-lg mt-2" type="button"><i class="fas fa-print"></i> Print Receipt</button>
+        <button class="btn btn-success btn-lg mt-2" type="button"><i class="fas fa-check-circle"></i> Confirm Transaction</button>
+      </div>
     </div>
   </div>
 

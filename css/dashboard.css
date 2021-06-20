@@ -19,21 +19,54 @@ body{
     background-color: gainsboro;
     width: 50%;
     height: 200px;
+    position: relative;
+}
+
+.large-num-label {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 100px;
+
 }
 
 #discount {
-    background-color: beige;
+    background-color: bisque;
     width: 50%;
     height: 200px;
+    position: relative;
 }
 
 #total-amount {
-    background-color: bisque;
+    background-color: beige;
     width: 100%;
     height: 200px;
+    position: relative;
 }
 
 .table-responsive {
     height: 380px;
     overflow-y: auto;
+}
+
+.button-group {
+    background-color: beige;
+}
+
+.butt {
+    background-color: lightBlue;
+    height:180px;
+    width:400px;
+    cursor:pointer;
+}
+
+.butt:hover {
+    background-color: aquamarine;
+    color:white;
+}
+
+
+.title-label {
+    font-family: "Rasa SemiBold";
+    font-size: 50px;
 }
