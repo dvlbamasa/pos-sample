@@ -18,7 +18,7 @@ body{
 #total-items {
     background-color: gainsboro;
     width: 50%;
-    height: 200px;
+    height: 160px;
     position: relative;
 }
 
@@ -31,16 +31,16 @@ body{
 }
 
 #discount {
-    background-color: bisque;
+    background-color: beige;
     width: 50%;
-    height: 200px;
+    height: 160px;
     position: relative;
 }
 
 #total-amount {
-    background-color: beige;
+    background-color: whitesmoke;
     width: 100%;
-    height: 200px;
+    height: 160px;
     position: relative;
 }
 
@@ -50,13 +50,13 @@ body{
 }
 
 .button-group {
-    background-color: beige;
+    background-color: whitesmoke;
 }
 
 .butt {
     background-color: lightBlue;
-    height:180px;
-    width:400px;
+    height:150px;
+    width:350px;
     cursor:pointer;
 }
 
@@ -67,6 +67,6 @@ body{
 
 
 .title-label {
-    font-family: "Rasa SemiBold";
+    font:600 16px/18px 'Open Sans',sans-serif;
     font-size: 60px;
 }
